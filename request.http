@@ -1,0 +1,209 @@
+
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{   "nombre"   : "Nombre 02",
+    "email"    : "nombre02@gmail.com",
+    "estado"   : true ,
+    "fechaAlta": "2022-06-05",  
+    "fechaActu": "2022-06-05"   
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+
+###
+GET http://localhost:9000/api/users/62a968f15a963f7bffd65439 HTTP/1.1
+Content-Type: application/json
+
+
+###
+PUT http://localhost:9000/api/users/62a968f15a963f7bffd65439 HTTP/1.1
+Content-Type: application/json
+
+{   "nombre"   : "Nombre 02",
+    "email"    : "nombre02@gmail.com",
+    "estado"   : false ,
+    "fechaAlta": "2022-05-01",  
+    "fechaActu": "2022-05-25"   
+}
+
+###
+DELETE http://localhost:9000/api/users/6295b9b6efe2931a86af4ee6 HTTP/1.1
+Content-Type: application/json
+
+
+
+
+###
+POST http://localhost:9000/api/equtipos HTTP/1.1
+Content-Type: application/json
+
+{   "nombre"   : "tipoequipo02",
+    "estado"   : false,
+    "fechaAlta": "2022-01-07",  
+    "fechaActu": "2022-05-22"   
+}
+
+###
+GET http://localhost:9000/api/equtipos HTTP/1.1
+Content-Type: application/json
+
+
+###
+GET http://localhost:9000/api/equtipos/62a96b89fc49bea68a9dbf54 HTTP/1.1
+Content-Type: application/json
+
+
+###
+PUT http://localhost:9000/api/equtipos/62a96b89fc49bea68a9dbf54 HTTP/1.1
+Content-Type: application/json
+
+{   "nombre"   : "tipoequipo0005",
+    "estado"   : false,
+    "fechaAlta": "2022-06-05",  
+    "fechaActu": "2022-06-10"   
+}
+
+###
+DELETE http://localhost:9000/api/equtipos/62a96b89fc49bea68a9dbf54 HTTP/1.1
+Content-Type: application/json
+
+
+
+
+###
+POST http://localhost:9000/api/equmarca HTTP/1.1
+Content-Type: application/json
+
+{   "nombre"   : "marcaequipo03",
+    "estado"   : true,
+    "fechaAlta": "2022-02-25",  
+    "fechaActu": "2022-05-22"   
+}
+
+###
+GET http://localhost:9000/api/equmarca HTTP/1.1
+Content-Type: application/json
+
+
+###
+GET http://localhost:9000/api/equmarca/62a96ccbfc49bea68a9dbf60 HTTP/1.1
+Content-Type: application/json
+
+
+###
+PUT http://localhost:9000/api/equmarca/62a96ccbfc49bea68a9dbf60 HTTP/1.1
+Content-Type: application/json
+
+{   "nombre"   : "marcaequipo0005",
+    "estado"   : false,
+    "fechaAlta": "2022-06-05",  
+    "fechaActu": "2022-06-10"   
+}
+
+###
+DELETE http://localhost:9000/api/equmarca/62a96ccbfc49bea68a9dbf60 HTTP/1.1
+Content-Type: application/json
+
+
+
+
+
+
+###
+
+
+
+###
+POST http://localhost:9000/api/equestado HTTP/1.1
+Content-Type: application/json
+
+{   "nombre"   : "Estadoequipo02",
+    "estado"   : false,
+    "fechaAlta": "2022-02-18",  
+    "fechaActu": "2022-05-22"   
+}
+
+###
+GET http://localhost:9000/api/equestado HTTP/1.1
+Content-Type: application/json
+
+
+###
+GET http://localhost:9000/api/equestado/62a96e4601b587e9a4e78965 HTTP/1.1
+Content-Type: application/json
+
+
+###
+PUT http://localhost:9000/api/equestado/62a96e4601b587e9a4e78965 HTTP/1.1
+Content-Type: application/json
+
+{   "nombre"   : "Estadoequipo25",
+    "estado"   : true,
+    "fechaAlta": "2022-01-15",  
+    "fechaActu": "2022-05-08"   
+}
+
+###
+DELETE http://localhost:9000/api/equestado/62a96e4601b587e9a4e78965 HTTP/1.1
+Content-Type: application/json
+
+
+
+
+
+
+###
+
+
+
+###
+POST http://localhost:9000/api/equinvent HTTP/1.1
+Content-Type: application/json
+
+{   "serial"    : "Estadoequipo02",
+    "modelo"    : "Celeron",
+    "descrip"   : "equipo muy bueno",  
+    "urlImagen" : "https://imagenes.com/img001.png",
+    "color"     : "rojo",
+    "fechaAlta" : "2022-02-23",
+    "precio"    : 125300,
+    "usuCargo"  : "Usuario01",
+    "marca"     : "IBM",
+    "equEstado" : "Bodega",
+    "equTipo"   : "Cómputo"
+}
+
+###
+GET http://localhost:9000/api/equinvent HTTP/1.1
+Content-Type: application/json
+
+
+###
+GET http://localhost:9000/api/equinvent/62a96e4601b587e9a4e78965 HTTP/1.1
+Content-Type: application/json
+
+
+###
+PUT http://localhost:9000/api/equinvent/62a96e4601b587e9a4e78965 HTTP/1.1
+Content-Type: application/json
+
+{   "serial"    : "Estadoequipo02",
+    "modelo"    : false,
+    "descrip"   : "2022-02-18",  
+    "urlImagen" : "2022-05-22",
+    "color"     : "rojo",
+    "fechaAlta" : "2022-02-23",
+    "precio"    : 125300,
+    "usuCargo"  : "Usuario01",
+    "marca"     : "IBM",
+    "equEstado" : "Bodega",
+    "equTipo"   : "Cómputo"
+}
+###
+DELETE http://localhost:9000/api/equinvent/62a96e4601b587e9a4e78965 HTTP/1.1
+Content-Type: application/json
